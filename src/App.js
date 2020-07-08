@@ -32,7 +32,7 @@ function App() {
           <Switch>
             <Route exact path={['/', '/grade']} component={GradeList} />
             <Route exact path="/add" component={AddGrade} />
-            <Route path="/grade/:id" component={Grade} />
+            <Route path="/grade/:_id" component={Grade} />
           </Switch>
         </div>
       </div>

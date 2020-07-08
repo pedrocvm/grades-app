@@ -4,20 +4,21 @@ const getAll = () => {
   return http.get('/grade');
 };
 
-const get = (id) => {
-  return http.get(`/grade/${id}`);
+const get = (_id) => {
+  return http.get(`/grade/${_id}`);
 };
 
 const create = (data) => {
   return http.post('/grade', data);
 };
 
-const update = (id, data) => {
-  return http.put(`/grade/${id}`, data);
+const update = (_id, data) => {
+  console.log(_id)
+  return http.put(`/grade/${_id}`, data);
 };
 
-const remove = (id) => {
-  return http.delete(`/grade/${id}`);
+const remove = (_id) => {
+  return http.delete(`/grade/${_id}`);
 };
 
 const removeAll = () => {
